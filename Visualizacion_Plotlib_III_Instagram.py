@@ -224,7 +224,7 @@ import hashlib
 
 correct = str(solucion_1)+ str(solucion_2)+ str(solucion_3)+ str(solucion_4)+ str(solucion_5)+ str(solucion_6)+ str(solucion_7)
 pwd = hashlib.sha256(str(correct).encode())
-#print('El token para corregir en Nodd3r es:\n',pwd.hexdigest())
+#print('El token para corregir es:\n',pwd.hexdigest())
 if pwd.hexdigest()[0:6] == '4ad819':
   print('¡Felicidades! puedes avanzar al siguiente modulo \n El token es: ',pwd.hexdigest())
 else:
